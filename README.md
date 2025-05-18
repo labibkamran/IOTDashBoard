@@ -42,12 +42,12 @@ project/
 ├── backend/
 │   ├── src/
 │   │   ├── config/
-│   │   │   └── db.js
+│   │   │   └── db.js         # MongoDB connection configuration
 │   │   ├── models/
-│   │   │   └── deviceData.js
+│   │   │   └── deviceData.js # Device data schema
 │   │   ├── routes/
-│   │   │   └── deviceRoutes.js
-│   │   └── server.js
+│   │   │   └── deviceRoutes.js # API routes
+│   │   └── server.js         # Express server setup
 │   └── package.json
 └── frontend/
     ├── src/
@@ -76,24 +76,15 @@ project/
    npm install
    ```
 
+   The backend is configured to use MongoDB Atlas. The connection string is already set up in `backend/src/config/db.js`. If you need to use a different MongoDB instance:
+   - Open `backend/src/config/db.js`
+   - Replace the connection string with your MongoDB URI
+   - Make sure to whitelist your IP address in MongoDB Atlas
+
 3. **Frontend Setup**
    ```bash
    cd frontend
    npm install
-   ```
-
-4. **MongoDB Configuration**
-   - Create a MongoDB Atlas account if you don't have one
-   - Create a new cluster
-   - Get your connection string
-   - Update the connection string in `backend/src/config/db.js`
-   - Whitelist your IP address in MongoDB Atlas
-
-5. **Environment Variables**
-   Create a `.env` file in the backend directory:
-   ```
-   MONGODB_URI=your_mongodb_connection_string
-   PORT=5000
    ```
 
 ## Running the Application
@@ -150,6 +141,13 @@ project/
   - Node.js with Express
   - MongoDB with Mongoose
   - RESTful API architecture
+
+## Database Configuration
+
+The project uses MongoDB Atlas for the database. The connection is configured in `backend/src/config/db.js`. The current setup includes:
+- MongoDB Atlas connection string
+- Connection options for optimal performance
+- Error handling for connection issues
 
 ## Contributing
 
