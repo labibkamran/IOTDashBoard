@@ -2,6 +2,8 @@
 
 A real-time IoT dashboard application built using the MERN stack (MongoDB, Express.js, React, Node.js) that allows monitoring and managing IoT devices and their sensor data.
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/labibkamran/IOTDashBoard.git)
+
 ## Features
 
 - **Real-time Device Monitoring**
@@ -64,8 +66,8 @@ project/
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/labibkamran/IOTDashBoard.git
+   cd IOTDashBoard
    ```
 
 2. **Backend Setup**
@@ -163,4 +165,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For support, please open an issue in the GitHub repository or contact the maintainers. 
+For support, please open an issue in the [GitHub repository](https://github.com/labibkamran/IOTDashBoard.git) or contact the maintainers. 
